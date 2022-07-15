@@ -71,6 +71,7 @@ void loop() {
     }
     lcd.print(shifted[i]);
   }
+  // Scrolling gimic here
   while(Serial.available()==0){
     page = analogRead(A0)/515;
     if(page != previous){ lcd.clear();}
